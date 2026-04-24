@@ -31,7 +31,7 @@ python -m PyInstaller `
     --clean `
     --icon "assets\icon.ico" `
     --add-data "assets\icon.ico;assets" `
-    "src\app.py"
+    "run.py"
 
 if ($LASTEXITCODE -ne 0) {
     Pop-Location
