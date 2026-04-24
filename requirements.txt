@@ -1,0 +1,4 @@
+# Runtime: zero dependencias. Usa so stdlib (tkinter, gzip, xml, pathlib, etc).
+
+# Dev-only (opcional, instalar com `pip install -r requirements-dev.txt` se criado no futuro):
+#   pytest>=8.0

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# App runtime / dados locais
+logs/
+*.log
+*.bak
+temp/
+scratch/
+
+# Dados sensiveis / config local
+.env
+.env.local
+config.local.json
+
+# PyInstaller (quando empacotar .exe no futuro)
+*.spec
