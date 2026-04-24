@@ -15,3 +15,5 @@ Registro de operacoes e solicitacoes da sessao, agrupadas por data. Versoes mais
 - [x] App non-blocking apos disparar execucao (permite paralelismo)
 - [x] Release publica v0.1.0 — git init, LICENSE MIT, README reescrito pra open-source, pyproject.toml com URLs do repo, gh repo create --public, topics setados, release v0.1.0 criada
 - [x] Auditoria de privacidade: removidas todas as referencias a nomes internos (servidores, projetos, marca) dos arquivos versionados
+- [x] Build do instalador Windows — PyInstaller (onedir, 24 MB bundle) + Inno Setup 6 (8.9 MB setup.exe), via scripts/build_release.ps1
+- [x] Instalador anexado na release v0.1.0 no GitHub

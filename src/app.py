@@ -115,7 +115,17 @@ def open_in_explorer(path: Path) -> None:
 # ------------------------------------------------------------------------------
 
 
-ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
+def _assets_dir() -> Path:
+    """Retorna o diretorio de assets tanto em dev (rodando do fonte)
+    quanto empacotado (PyInstaller usa sys._MEIPASS)."""
+    if getattr(sys, "frozen", False):
+        meipass = getattr(sys, "_MEIPASS", None)
+        if meipass:
+            return Path(meipass) / "assets"
+    return Path(__file__).resolve().parent.parent / "assets"
+
+
+ASSETS_DIR = _assets_dir()
 ICON_PATH = ASSETS_DIR / "icon.ico"
 
 

@@ -23,3 +23,5 @@ Decisoes tecnicas-chave:
 - Nao aborta em arquivos ausentes, so loga
 - Icone gerado programaticamente via Pillow (scripts/gen_icon.py) — 7 tamanhos (16-256px)
 - App GUI non-blocking apos dispararar exec (permite processar outros .prproj em paralelo)
+- Pipeline de build: PyInstaller onedir + Inno Setup 6 (scripts/build_release.ps1)
+- Instalador Windows de 8.9 MB (bundle interno 24 MB) disponivel na release v0.1.0

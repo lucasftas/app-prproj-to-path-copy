@@ -38,5 +38,7 @@ scratch/
 .env.local
 config.local.json
 
-# PyInstaller (quando empacotar .exe no futuro)
+# PyInstaller output (gerado por scripts/build_release.ps1)
 *.spec
+/build/
+/dist/

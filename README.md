@@ -85,7 +85,15 @@ O **Project Manager** do Premiere é lento, trava em paths UNC longos, fica zuad
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Instalação
+
+### Opção 1 — Instalador Windows (recomendado)
+
+Baixe o instalador da [release mais recente](https://github.com/lucasftas/app-prproj-to-path-copy/releases/latest) (`prproj-to-path-copy-X.Y.Z-setup.exe`, ~9 MB), execute e pronto. Cria atalho no menu Iniciar e (opcionalmente) na área de trabalho.
+
+Não requer Python instalado.
+
+### Opção 2 — Rodando do fonte (pra dev)
 
 ```powershell
 git clone https://github.com/lucasftas/app-prproj-to-path-copy.git
@@ -93,13 +101,24 @@ cd app-prproj-to-path-copy
 python -m src.app
 ```
 
+Requer Python 3.12+.
+
 Pronto. Na primeira execução, o app pede a pasta destino (salva em `%APPDATA%\app-prproj-to-path-copy\config.json`). Depois é só arrastar/selecionar um `.prproj`.
 
-### Opcional — instalar como comando global
+### Opção 3 — Como comando global
 
 ```powershell
 pip install -e .
 prproj-copy
+```
+
+### Gerando o instalador localmente
+
+```powershell
+pip install pyinstaller
+# Com Inno Setup 6 instalado em %LOCALAPPDATA%\Programs\Inno Setup 6\
+.\scripts\build_release.ps1
+# Saida: dist\installer\prproj-to-path-copy-0.1.0-setup.exe
 ```
 
 ---
